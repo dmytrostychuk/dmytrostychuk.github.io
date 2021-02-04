@@ -1,1 +1,0 @@
-# dmytrostychuk.github.io
