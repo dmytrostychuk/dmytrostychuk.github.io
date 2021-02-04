@@ -1,0 +1,298 @@
+body {
+  font-size: 16px;
+  font-family: "Roboto", Arial, sans-serif;
+  width: auto;
+  margin: 0;
+  padding: 0;
+  line-height: 24px;
+  font-weight: normal;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  color: #283136;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 0 10px;
+  align-items: center; 
+}
+
+.button {
+  font: inherit;
+  font-weight: bold;
+
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+  padding: 15px 50px;
+  
+  border: none;
+  border-radius: 3px;
+
+  background-color: #fb565a;
+  color: #ffffff;
+}
+
+/* Header */
+
+.main-header {
+  background-color: #eeeeee;
+}
+
+.main-navigation {
+
+}
+
+.main-logo {
+  margin: 0;
+  padding: 0px;
+}
+
+.site-navigation {
+  width: 500px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.site-navigation li {
+  display: inline;
+  padding-right: 50px;
+  
+}
+
+.user-navigation {
+  width: 150px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.main-navigation-wrapper {
+  padding:0;
+  margin:0;
+}
+
+.main-navigation-wrapper .container {
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+
+.slogan-navigation {
+  width: 400px;
+  padding-bottom: 90px;
+}
+
+.slogan-navigation p {
+  padding-bottom: 45px; 
+  
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus,
+.user-navigation a:hover,
+.user-navigation a:focus {
+  background-color: #3f5d5e;
+  color: #ffffff;
+}
+
+.slogan {
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: bold;
+  color: #000000;
+}
+
+/* /Header */
+
+/* Menu */
+
+/* features-list */
+.features-list {
+  display: flex;
+  justify-content: space-between;
+
+  width: 1050px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+
+  
+  margin: 0;
+}
+
+.features-list p {
+  width: 250px;
+  padding-bottom: 30px;
+}
+
+.features-list h3 {
+  text-transform: uppercase;
+
+  font-size: 24px;
+}
+
+.feature-item {
+  width: 300px;
+}
+
+.button-site {
+  background-color: #fb565a;
+  padding: 10px 43px;
+}
+
+.button-play {
+  background-color: #00ca74;
+  padding: 10px 43px;
+}
+
+.button-presentation {
+  background-color: #efc849;
+  padding: 10px 43px;
+}
+/* /features-list */
+
+/* info */
+.info {
+  display: flex;
+  justify-content: space-between;
+  width: 1150px;
+  border-top: 2px solid #eeeeee;
+}
+
+.desc {
+width: 670px;
+padding-top: 40px;
+}
+
+h2 {
+  font-size: 45px;
+  line-height: 46px;
+}
+
+.desc p {
+  padding-bottom: 30px;
+}
+
+.desc .item {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.list-work {
+  list-style: none;
+}
+
+.list-work li {
+  padding-top: 25px;
+}
+
+.list-work .item {
+  list-style: none;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+/* /info */
+
+/* status */
+.status {
+  width: 360px;
+  padding-top: 50px;
+  padding-bottom: 70px;
+}
+
+.status .text {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #000000;
+  padding-top: 20px;
+}
+
+.responsibility th {
+  font-size: 45px;
+  font-weight: bold;
+  padding: 20px 10px;
+  padding-top: 30px;
+}
+
+.interest {
+  font-size: 25px;
+}
+
+.responsibility td {
+  line-height: 18px;
+  padding-top: 15px;
+}
+
+/* /status */
+
+/* partners */
+.partners {
+  padding: 40px 0;
+
+  margin: 0;
+  border-top: 2px solid #eeeeee;
+}
+
+.partners li {
+  display: inline;
+  width: 450px;
+  vertical-align: middle;
+}
+
+.partners .list {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  max-width: 1200px;
+}
+
+/* /partners */
+
+.map {
+  max-height: 1500px;
+  background-image: url("img/map1.png");
+  background-size: 100% 800px;
+  background-repeat: no-repeat;
+}
+
+.street h3 {
+  font-size: 18px;
+  padding-bottom: 22px;
+}
+
+.street .adress {
+  line-height: 18px;
+}
+
+.message-button {
+  margin-top: 35px;
+}
+
+.socials li {
+  list-style: none;
+  padding: 40px;
+}
+
+.socials a {
+  background-color: #e1e1e1;
+  border-radius: 100%;
+  padding: 40px;
+}
+
+.copy {
+  line-height: 32px;
+}
