@@ -21,7 +21,7 @@ p {
 .container {
   display: flex;
   justify-content: space-between;
-  max-width: 1150px;
+  max-width: 1225px;
   margin: 0 auto;
   padding: 0 10px;
   align-items: center; 
@@ -49,9 +49,6 @@ p {
   background-color: #eeeeee;
 }
 
-.main-navigation {
-
-}
 
 .main-logo {
   margin: 0;
@@ -95,6 +92,7 @@ p {
 .slogan-navigation {
   width: 400px;
   padding-bottom: 90px;
+  padding-right: 10px;
 }
 
 .slogan-navigation p {
@@ -126,7 +124,7 @@ p {
   display: flex;
   justify-content: space-between;
 
-  width: 1050px;
+  width: 1200px;
   padding-top: 80px;
   padding-bottom: 80px;
 
@@ -241,10 +239,11 @@ h2 {
 
 /* partners */
 .partners {
-  padding: 40px 0;
-
+  padding-top: 40px;
+padding-bottom: 25px;
   margin: 0;
   border-top: 2px solid #eeeeee;
+  border-bottom: 2px solid #eeeeee;
 }
 
 .partners li {
@@ -261,38 +260,65 @@ h2 {
 }
 
 /* /partners */
-
+/* map */
 .map {
-  max-height: 1500px;
+  margin-top: 80px;
   background-image: url("img/map1.png");
-  background-size: 100% 800px;
+  background-size: 100% ;
   background-repeat: no-repeat;
+}
+
+.street {
+  display: inline-block;
+  margin-top: 60px;
+  padding-top: 20px;
+  padding-bottom: 55px;
+  background-color: #ffffff;
+  padding-left: 55px;
+  padding-right: 55px;
+}
+
+address {
+  width: 200px; 
 }
 
 .street h3 {
   font-size: 18px;
   padding-bottom: 22px;
+  text-transform: uppercase;
 }
 
-.street .adress {
-  line-height: 18px;
+.street p {
+  padding-bottom: 30px;
+}
+/* /map */
+
+/* socials */
+.social {
+  display: flex;
+  align-items: center; 
+  padding-bottom: 80px;
 }
 
-.message-button {
-  margin-top: 35px;
-}
 
 .socials li {
+  display: inline;
   list-style: none;
-  padding: 40px;
+  padding-right: 15px; 
 }
 
 .socials a {
   background-color: #e1e1e1;
   border-radius: 100%;
-  padding: 40px;
+  padding: 30px;
 }
 
 .copy {
-  line-height: 32px;
+  line-height: 10px;
+  padding-left: 100px;
 }
+.caption {
+  font-size: 36px;
+}
+
+/* /socials */
