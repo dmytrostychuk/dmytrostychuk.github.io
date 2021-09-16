@@ -22,4 +22,13 @@ if (iconMenu) {
 		iconMenu.classList.toggle('_active');
 		menuBody.classList.toggle('_active');
 	});
-}
+};
+
+//slider
+$('.slider').slick({
+	dots:true,
+	slidesToShow: 1,
+	centerMode: true
+});
+
+
