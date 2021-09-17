@@ -4,7 +4,7 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="css/style.min.css">
-		<title></title>
+		<title>test-task</title>
 	</head>
 		<body>
 			<!-- script -->
@@ -14,12 +14,14 @@
 				crossorigin="anonymous">
 			</script>
 			
-			<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+			<script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
 			<!-- header -->
 			<header class="header">
+				
 				<div class="header__container">
 
+					<!-- header__logo -->
 					<a href="" class="header__logo">
 						<svg width="122" height="50" viewBox="0 0 122 50" fill="none" xmlns="http://www.w3.org/2000/svg">
 						<path d="M13.0818 27.4902C13.1721 27.5925 13.2744 27.6949 13.3708 27.7912C13.4671 27.8875 13.6417 28.0501 13.7801 28.1705L13.0818 27.4902ZM13.0818 27.4902C13.1721 27.5925 13.2744 27.6949 13.3708 27.7912C13.4671 27.8875 13.6417 28.0501 13.7801 28.1705L13.0818 27.4902ZM13.0818 27.4902C13.1721 27.5925 13.2744 27.6949 13.3708 27.7912C13.4671 27.8875 13.6417 28.0501 13.7801 28.1705L13.0818 27.4902Z" fill="#FF843F"/>
@@ -33,9 +35,10 @@
 						<path d="M98.5996 31.7525H102.705V46.2854H98.5996V31.7525Z" fill="black"/>
 						<path d="M116.407 43.4619H110.267L109.123 46.2854H104.909L111.374 31.7525H115.42L121.862 46.2854H117.581L116.407 43.4619ZM115.203 40.4518L113.337 35.8041L111.471 40.4518H115.203Z" fill="black"/>
 						</svg></a>
-	
+
+					<!-- menu -->
 					<div class="header__menu menu">
-	
+
 						<button class="menu__icon">
 							<span></span>
 						</button>
@@ -56,6 +59,7 @@
 
 				<!-- header__tittle -->
 				<div class="container">
+
 					<div class="header__tittle mobile">
 						<h1><span class="header__tittle--country">Turkey</span> dolor sit amet, consectetur adipiscing elit</h1>
 					</div>
@@ -68,37 +72,54 @@
 			
 			<!-- main  -->
 			<main class="main">
-				<div class="main__container">
+				<div class="slider__wrapper">
 
-					<!-- places  -->
+					<!-- places -->
 					<section class="places">
+						
+						<!-- places__tittle -->
 						<h2 class="places__tittle">Popular Places</h2>
-							<p class="places__text">
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Justo est, est massa est ridiculus aliquam enim. Id eget adipiscing feugiat mauris, ac non at luctus pretium. Purus, vel dui ut dolor commodo, sed. Nec blandit et tincidunt euismod diam. Egestas tellus.
-							</p>
+
+						<!-- places__text -->
+						<p class="places__text">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Justo est, est massa est ridiculus aliquam enim. Id eget adipiscing feugiat mauris, ac non at luctus pretium. Purus, vel dui ut dolor commodo, sed. Nec blandit et tincidunt euismod diam. Egestas tellus.
+						</p>
+
+						<!-- slider-count -->
+						<div class="slider-count desktop">
+							<span class="slider-count__current">
+								1
+							</span>
+
+							<span class="slider-count__total">
+								3
+							</span>
+						</div>
+
+						<!-- slider-arrows -->
+						<div class="slider-arrows desktop"></div>
+
+						<!-- slider-dots -->
+						<div class="slider-dots"></div>	
 					</section>
 
-					
-					
+					<!-- slider -->
+					<div class="slider">
 
-				</div> 
-<div class="slider__wrapper">
-				<div class="slider">
-
-					<div class="slider__item">
-						<span class="slider__name">Agra</span>
-						<img src="img/popular-places-slide-1.webp" alt="" width="235">
-					</div>
-	
-					<div class="slider__item">
-						<img src="img/popular-places-slide-2.webp" alt="" width="235">
-					</div>
-	
-					<div class="slider__item">
-						<img src="img/popular-places-slide-3.webp" alt="" width="235">
+						<div class="slider__item">
+							<span class="slider__name">Agra</span>
+							<img src="img/popular-places-slide-1.webp" alt="" width="235">
+						</div>
+		
+						<div class="slider__item">
+							<img src="img/popular-places-slide-2.webp" alt="" width="235">
+						</div>
+		
+						<div class="slider__item">
+							<img src="img/popular-places-slide-3.webp" alt="" width="235">
+						</div>
 					</div>
 				</div>
-			</div>
 			</main>
 
 			<script src="js/script.js"></script>
