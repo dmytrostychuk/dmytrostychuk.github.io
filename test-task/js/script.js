@@ -26,9 +26,28 @@ if (iconMenu) {
 
 //slider
 $('.slider').slick({
-	dots:true,
 	slidesToShow: 1,
-	centerMode: true
+	variableWidth: true,
+	dots:true,
+	appendDots: $('.slider-dots'),
+	appendArrows: $('.slider-arrows'),
+	prevArrow: '<button class="slick-prev slick-arrow" aria-label="Prev" type="button" style="">Next</button>',
+	nextArrow: '<button class="slick-next slick-arrow" aria-label="Next" type="button" style="">Next</button>',
+	responsive:[
+		{
+			breakpoint: 768,
+			settings: {
+				dots:true,
+				slidesToShow: 1,
+				centerMode: true,
+				variableWidth: true
+			}
+		}
+	]
 });
 
-
+$('.slider').on('init reInit afterChange', function(event, slick, currentSlide, nextSlide){
+	var i = (currentSlide ? currentSlide : 0) + 1;
+	document.querySelector('.slider-count__current').innerHTML = i;
+	document.querySelector('.slider-count__total').innerHTML = slick.slideCount;
+  });
