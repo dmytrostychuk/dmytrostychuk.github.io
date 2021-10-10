@@ -224,9 +224,9 @@ a {
 
 .header__contacts span:active {
   opacity: 0.3;
-  -webkit-transition: 0.3;
-  -o-transition: 0.3;
-  transition: 0.3;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .logo__mobile,
@@ -259,9 +259,9 @@ a {
 
 .logo__mobile:active {
   opacity: 0.3;
-  -webkit-transition: 0.3;
-  -o-transition: 0.3;
-  transition: 0.3;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .menu {
@@ -324,9 +324,9 @@ a {
 
 .menu__list li a:active {
   opacity: 0.3;
-  -webkit-transition: 0.3;
-  -o-transition: 0.3;
-  transition: 0.3;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .menu .desk {
@@ -386,9 +386,9 @@ a {
 
 .burger-bth:active {
   opacity: 0.3;
-  -webkit-transition: 0.3;
-  -o-transition: 0.3;
-  transition: 0.3;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .bth-active span {
@@ -446,9 +446,9 @@ a {
 
 .category__list li:active {
   opacity: 0.3;
-  -webkit-transition: 0.3;
-  -o-transition: 0.3;
-  transition: 0.3;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .category__list a {
@@ -557,9 +557,9 @@ a {
 
 .main__info p:nth-child(3):active {
   opacity: 0.3;
-  -webkit-transition: 0.3;
-  -o-transition: 0.3;
-  transition: 0.3;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .main__info span {
@@ -635,9 +635,9 @@ a {
 
 .slick-dots li:active {
   opacity: 0.3;
-  -webkit-transition: 0.3;
-  -o-transition: 0.3;
-  transition: 0.3;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .slick-dots button {
@@ -708,9 +708,9 @@ a {
 
   .sub-nav__logo:active {
     opacity: 0.3;
-    -webkit-transition: 0.3;
-    -o-transition: 0.3;
-    transition: 0.3;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
   }
 
   .sub-nav__link {
@@ -843,9 +843,9 @@ a {
 
   .sub-nav__copyright p .sub-nav__arrow:active {
     opacity: 0.3;
-    -webkit-transition: 0.3;
-    -o-transition: 0.3;
-    transition: 0.3;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
   }
 
   .sub-nav__copyright p .span-text {
@@ -922,9 +922,9 @@ a {
   .menu__list-social li a:active,
   .menu__list-lang li a:active {
     opacity: 0.1;
-    -webkit-transition: 0.3;
-    -o-transition: 0.3;
-    transition: 0.3;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
   }
 
   .menu__list .active,
@@ -962,9 +962,9 @@ a {
 
   .menu__lang a:active {
     opacity: 0.1;
-    -webkit-transition: 0.3;
-    -o-transition: 0.3;
-    transition: 0.3;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
   }
 
   .menu__lang span {
@@ -1010,9 +1010,9 @@ a {
 
   .category a:active {
     opacity: 0.1;
-    -webkit-transition: 0.3;
-    -o-transition: 0.3;
-    transition: 0.3;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
   }
 
   .main__content-1 {
