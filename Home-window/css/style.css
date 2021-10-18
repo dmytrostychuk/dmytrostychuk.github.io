@@ -343,8 +343,8 @@ a {
   position: relative;
   width: 24px;
   height: 16px;
-  margin-top: 15px;
   padding-left: 2px;
+  background-color: #03204A;
 }
 
 .burger-bth::before,
@@ -355,6 +355,7 @@ a {
   height: 2px;
   width: 24px;
   background-color: #3CC6F1;
+  left: 0;
 }
 
 .burger-bth::before,
