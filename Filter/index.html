@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/style.min.css">
+		<title></title>
+	</head>
+		<body>
+			Hello world
+			<form id="form" class="form">
+				<label class="form__inner">
+					
+					<input type="checkbox" name="option1" class="form__filter" id="checkbox1">
+					<label for="checkbox1">
+						<p class="form__tittle">Filter by</p>
+					</label>
+					<div class="form__line first" ></div>
+					<div class="form__line second"></div>
+					
+					<label class="form__label">	
+						<input type="checkbox" name="option2" class="checkbox2" id="checkbox2">
+						<label for="checkbox2" class="content-text">Price</label>
+						<label class="form__content form__price-content">
+							
+							<div id="slider-range" class="slider-range"></div>
+							<div>
+							<span class="rub-left" id="rub-left" style="position: absolute; margin-left: 7%; margin-top: 10%;"></span>
+							<span class="rub-right" id="rub-right" style="position: absolute; margin-left: 80%; margin-top: 10%;"></span>
+							</div>
+
+
+
+						</label>
+						<div class="form__line first" ></div>
+						<div class="form__line second"></div>
+					</label>
+
+					<label class="form__label">	
+						<input type="checkbox" name="option3" class="checkbox3" id="checkbox3">
+						<label for="checkbox3" class="content-text">Color</label> 
+						<div class="form__content form__color-content">
+
+								<input type="radio" id="color1" name="device">
+								<label for="color1" class="color1"></label>
+								
+								
+								<input type="radio" id="color2" name="device" >
+								<label for="color2" class="color2"></label>
+
+								<input type="radio" id="color3" name="device">
+								<label for="color3" class="color3"></label>
+
+								<input type="radio" id="color4" name="device">
+								<label for="color4" class="color4"></label>
+							
+								<input type="radio" id="color5" name="device">
+								<label for="color5" class="color5"></label>
+
+								<input type="radio" id="color6" name="device">
+								<label for="color6" class="color6"></label>
+								
+								
+							
+						</div>
+						<div class="form__line first"></div>
+						<div class="form__line second"></div>
+					</label>
+
+					<label class="form__label">	
+						<input type="checkbox" name="option4" class="checkbox4" id="checkbox4">
+						<label for="checkbox4" class="content-text">Collection</label> 
+						<div class="form__content form__collection-content">
+							
+								<div class="cont"><a href="#">Casual</a></div>
+								<div class="cont"><a href="#">Petite</a></div>
+								<div class="cont"><a href="#">Classic</a></div>
+								<div class="cont"><a href="#">Soulluxe</a></div>
+						</div>
+						<div class="form__line first"></div>
+						<div class="form__line second"></div>
+					</label>
+
+					<!-- <label class="form__label empty-block">
+					</label> -->
+
+					<label class="form__label form__apply">
+						<a href="#" class="apply">Apply (9 products)</a>
+					</label>
+
+					<label class="form__label form__close">	
+						<input type='checkbox' name='checkall' onclick='checkedAll(form);' id="checkbox5">
+						<label for="checkbox5" class="content-text close">Close all</label> 
+					</label>
+					
+				</label>
+				</label>
+			</form>
+
+			<div>
+				
+			</div>
+
+			
+				<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+				<link href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" rel="stylesheet">
+
+				<script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js" integrity="sha256-eGE6blurk5sHj+rmkfsGYeKyZx3M4bG+ZlFyA7Kns7E=" crossorigin="anonymous"></script>
+
+				<script src="js/script.js"></script>
+		</body>
+
+		
+	</html>
