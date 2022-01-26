@@ -361,7 +361,7 @@ a:hover {
 }
 
 .special__block a {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .special .block-1 {
@@ -439,20 +439,28 @@ a:hover {
 @-webkit-keyframes special-timeline {
   from {
     width: 0;
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
   }
 
   to {
     width: 100%;
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
   }
 }
 
 @keyframes special-timeline {
   from {
     width: 0;
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
   }
 
   to {
     width: 100%;
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
   }
 }
 
@@ -466,7 +474,7 @@ a:hover {
   bottom: -5px;
   height: 5px;
   width: 0;
-  background-color: #ED3237;
+  background-color: #ed3237;
 }
 
 .special__block--animation::after {
@@ -476,6 +484,23 @@ a:hover {
           animation-duration: 5s;
   -webkit-animation-timing-function: linear;
           animation-timing-function: linear;
+}
+
+.special__block {
+  position: relative;
+  overflow: hidden;
+}
+
+.special__block::after {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  height: 5px;
+  width: 100%;
+  -webkit-transform: translateX(-100%);
+      -ms-transform: translateX(-100%);
+          transform: translateX(-100%);
+  background-color: #ed3237;
 }
 
 .page {
@@ -755,6 +780,10 @@ a:hover {
   line-height: 20px;
 }
 
+.card__title-category {
+  line-height: 22px;
+}
+
 .preview {
   position: relative;
   margin-top: 45px;
@@ -814,7 +843,7 @@ a:hover {
 }
 
 .preview__events::-webkit-scrollbar-thumb {
-  background-color: #ED3237;
+  background-color: #ed3237;
 }
 
 .preview__events-block {
@@ -854,6 +883,10 @@ a:hover {
   background-color: #929292;
 }
 
+.block-one .card__title {
+  line-height: 22px;
+}
+
 .advertising__wrapper {
   position: relative;
   display: -webkit-box;
@@ -865,7 +898,7 @@ a:hover {
   min-height: 116px;
   margin-top: 55px;
   padding: 0 55px;
-  background-color: #ED3237;
+  background-color: #ed3237;
 }
 
 .advertising__content {
@@ -891,13 +924,15 @@ a:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-top: 27px;
+  padding-top: 25px;
+  padding-left: 10px;
   font-size: 24px;
+  letter-spacing: 0.3px;
   color: #ffffff;
 }
 
 .advertising__sale {
-  text-transform: uppercase;
+  margin-top: -5px;
   font-size: 16px;
 }
 
@@ -921,7 +956,7 @@ a:hover {
 .slider {
   width: 1440px;
   margin: 0 auto;
-  margin-top: 40px;
+  margin-top: 45px;
   padding-bottom: 50px;
   background-color: #f4f4f4;
   font-family: "CeraPro-Medium";
@@ -929,25 +964,73 @@ a:hover {
 
 .page__tittle {
   display: inline-block;
-  padding-top: 50px;
+  padding-top: 47px;
   font-size: 40px;
   line-height: 54px;
   text-transform: uppercase;
 }
 
-.swiper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+.slider {
+  position: relative;
+  background-color: #f4f4f4;
+  max-width: 1440px;
+  margin: 0 auto;
   margin-top: 40px;
+  padding: 0 31px;
+  padding-bottom: 50px;
+}
+
+.slider__container {
+  padding-top: 43px;
+  margin-bottom: 50px;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.raiting__swiper {
+  margin: 0 auto;
+}
+
+.swiper-slide {
+  min-width: 0;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  margin-top: 90px;
+  padding: 235px 20px;
+  color: black;
+  background-color: #ffffff;
+}
+
+.swiper-button-prev::after {
+  margin-left: 15px;
+}
+
+.swiper-button-next::after {
+  margin-right: 15px;
+}
+
+.page__tittle--slider {
+  padding-left: 52px;
+}
+
+.swiper-button-disabled::after {
+  background-color: #929292;
+  color: #000000;
+}
+
+.wrapper--shadow {
+  margin-top: 3px;
+  margin-bottom: 55px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .rating {
   position: relative;
   width: 408px;
+  margin: 0 auto;
 }
 
 .rating .card__content {
@@ -1054,6 +1137,47 @@ a:hover {
 
 .block__ua .cards {
   grid-column: 3/5;
+}
+
+.popular__container {
+  margin-left: 50px;
+  margin-right: 38px;
+  padding-top: 35px;
+}
+
+.popular__next::after,
+.popular__prev::after {
+  margin-top: 85px;
+  padding: 123px 20px;
+}
+
+.popular__card {
+  font-size: 20px;
+}
+
+.popular__card-white {
+  padding-left: 0;
+  margin-bottom: 50px;
+  font-size: 20px;
+}
+
+.popular__category {
+  margin-top: 20px;
+  padding: 0 13px;
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.popular__link {
+  color: #000000;
+}
+
+.popular__time {
+  color: #000000;
+}
+
+.pretty-country {
+  margin-top: 32px;
 }
 
 .advertising {
