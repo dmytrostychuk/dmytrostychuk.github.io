@@ -9,7 +9,6 @@ if (iconMenu) {
 	});
 }
 
-new Swiper ('rating');
 
 /*
 Specials initialization
@@ -43,3 +42,41 @@ function initializeSpecials() {
 };
 
 initializeSpecials();
+
+const swiper = new Swiper('.raiting__swiper', {
+	// Optional parameters
+  
+	// Navigation arrows
+	navigation: {
+	  nextEl: '.swiper-button-next',
+	  prevEl: '.swiper-button-prev',
+	},
+
+	//Кількість слайдів для показу
+	slidesPerView: 3,
+
+	// autoplay: {
+	// 	delay: 1000,
+	// 	stopOnLastSlide: true,
+	// 	disableOnInteraction: false
+	// },
+
+	// spead: 800,
+
+	// loop: true,
+  
+  });
+
+  const swiper2 = new Swiper('.popular__swiper',{
+	// Navigation arrows
+	navigation: {
+		nextEl: '.swiper-button-next',
+		prevEl: '.swiper-button-prev',
+	  },
+  
+	  //Кількість слайдів для показу
+	  slidesPerView: 4,
+
+	  spaceBetween: 10,
+
+  });
