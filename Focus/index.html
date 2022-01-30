@@ -31,11 +31,11 @@
 							<a href="#" class="lang-ua">Ua</a>
 							<a href="#" class="lang-ru active__lang">Ru</a>
 						</div>
-						<button type="button" class="search">
-							<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<path d="M19.7236 18.263L16.0223 14.5658C18.8541 11.0422 18.5809 5.83127 15.3516 2.63027C13.6624 0.942928 11.4019 0 8.99236 0C6.5828 0 4.34713 0.942928 2.63312 2.63027C0.943949 4.31762 0 6.57568 0 8.98263C0 11.3896 0.943949 13.6228 2.63312 15.335C4.32229 17.0223 6.5828 17.9653 8.99236 17.9653C11.0293 17.9653 13.0166 17.2705 14.6064 16.005L18.3076 19.7022C18.5064 19.9007 18.7548 20 19.0032 20C19.2764 20 19.5248 19.9007 19.6987 19.7022C20.0962 19.2804 20.0962 18.66 19.7236 18.263ZM15.9975 8.95782C15.9975 10.8189 15.2771 12.5806 13.9605 13.8958C12.644 15.2109 10.8803 15.9305 9.0172 15.9305C7.15414 15.9305 5.39045 15.2109 4.07389 13.8958C2.75733 12.5806 2.03694 10.8189 2.03694 8.95782C2.03694 7.09678 2.75733 5.33499 4.07389 4.01985C5.39045 2.70471 7.15414 1.98511 9.0172 1.98511C10.8803 1.98511 12.644 2.70471 13.9605 4.01985C15.2771 5.33499 15.9975 7.09678 15.9975 8.95782Z" fill="black"/>
+						<a href="javascript:openModal()" class="search ">
+							<svg width="20" height="20" viewBox="0 0 20 20" fill="#000000" xmlns="http://www.w3.org/2000/svg">
+								<path d="M19.7236 18.263L16.0223 14.5658C18.8541 11.0422 18.5809 5.83127 15.3516 2.63027C13.6624 0.942928 11.4019 0 8.99236 0C6.5828 0 4.34713 0.942928 2.63312 2.63027C0.943949 4.31762 0 6.57568 0 8.98263C0 11.3896 0.943949 13.6228 2.63312 15.335C4.32229 17.0223 6.5828 17.9653 8.99236 17.9653C11.0293 17.9653 13.0166 17.2705 14.6064 16.005L18.3076 19.7022C18.5064 19.9007 18.7548 20 19.0032 20C19.2764 20 19.5248 19.9007 19.6987 19.7022C20.0962 19.2804 20.0962 18.66 19.7236 18.263ZM15.9975 8.95782C15.9975 10.8189 15.2771 12.5806 13.9605 13.8958C12.644 15.2109 10.8803 15.9305 9.0172 15.9305C7.15414 15.9305 5.39045 15.2109 4.07389 13.8958C2.75733 12.5806 2.03694 10.8189 2.03694 8.95782C2.03694 7.09678 2.75733 5.33499 4.07389 4.01985C5.39045 2.70471 7.15414 1.98511 9.0172 1.98511C10.8803 1.98511 12.644 2.70471 13.9605 4.01985C15.2771 5.33499 15.9975 7.09678 15.9975 8.95782Z"/>
 							</svg>
-						</button>
+						</a>
 					</div>
 
 					<!-- nav  -->
@@ -73,24 +73,24 @@
 						<section class="special">
 							<ul class="special__list">
 								<li class="special__block block-1">
-									<h2 class="special__tittle">
+									<p class="special__tittle">
 										<a href="#">Леди в законе. Особый статус<br> для жены президента</a>
-									</h2>
+									</p>
 								</li>
 								<li class="special__block block-2">
-									<h2 class="special__tittle">
+									<p class="special__tittle">
 										<a href="#">Взрыв на Позняках<br> в Киеве</a>
-									</h2>
+									</p>
 								</li>
 								<li class="special__block block-3">
-									<h2 class="special__tittle">
+									<p class="special__tittle">
 										<a href="#">Потоп на западной Украине</a>
-									</h2>
+									</p>
 								</li>
 								<li class="special__block block-4">
-									<h2 class="special__tittle">
+									<p class="special__tittle">
 										<a href="#">Цифровая трансформация<br> бизнеса Украины</a>
-									</h2>
+									</p>
 								</li>
 							</ul>
 							
@@ -198,7 +198,6 @@
 							<article class="card card--border">
 								<figure class="card__content">
 									<picture>
-										<source>
 										<img src="img/card-2.jpg" srcset="img/card-2-@2x.jpg 2x" alt="5G влияние на здоровье" width="300" height="260">
 									</picture>
 									<a href="#" class="card__category">Технологии и наука</a>
@@ -236,7 +235,6 @@
 							<article class="card card--border">
 								<figure class="card__content">
 									<picture>
-										<source>
 										<img src="img/card-4.jpg" srcset="img/card-4-@2x.jpg 2x" alt="Скандал в Слуге народа" width="300" height="260">
 									</picture>
 									<a href="#" class="card__category">Политика</a>
@@ -406,18 +404,15 @@
 											В середине нулевых Киев переживал немыслимый ипотечный бум. Банки выдавали кредиты на десять и двадцать лет. 
 										</blockquote>
 									</figcaption>
-
-									<figure class="card__redactor">
-										<figcaption>
-											<a href="#" class="autor__white autor__white--large">
-												Алексей Газубей
-											</a>
-												<p>
-												 Главний редактор focus.ua
-												</p>
-										</figcaption>
-									</figure>
 								</figure>
+								<div class="card__redactor">
+									<a href="#" class="autor__white autor__white--large">
+										Алексей Газубей
+									</a>
+									<p>
+										Главний редактор focus.ua
+									</p>
+								</div>
 							</article>
 							<!-- card-2 -->
 							<article class="card card--border">
@@ -590,7 +585,7 @@
 									<article class="card slider-first__card">
 											<figure class="card__content slider-first__content">
 												<picture>
-													<img src="img/slider-news1-2.svg" width="408" height="515">
+													<img src="img/slider-news1-2.svg" alt="30 лучших работодателей Украины" width="408" height="515">
 												</picture>
 												<a href="#" class="card__category-long slider-first__category slider-first__category-black ">Рейтинг</a>
 												<figcaption class="card__figcaption">
@@ -651,7 +646,7 @@
 									<article class="card slider-first__card">
 											<figure class="card__content slider-first__content">
 												<picture>
-													<img src="img/slider-news1-2.svg" width="408" height="515">
+													<img src="img/slider-news1-2.svg" alt="30 лучших работодателей Украины" width="408" height="515">
 												</picture>
 												<a href="#" class="card__category-long slider-first__category slider-first__category-black ">Рейтинг</a>
 												<figcaption class="card__figcaption">
@@ -696,7 +691,7 @@
 						<h2 class="page__tittle">
 							<a href="#">Украина</a>
 						</h2>
-						<!-- block--three -->
+						<!-- block three -->
 						<section class="block block--three">
 							<!-- card-1  -->
 							<article class="card card--border">
@@ -1001,7 +996,7 @@
 							<a href="#">Красивая страна</a>
 						</h2>
 
-						<!-- block--four -->
+						<!-- block four -->
 						<section class="block block--four">
 							<!-- card-1  -->
 							<article class="card card--border">
@@ -1024,7 +1019,6 @@
 							<article class="card card--border">
 								<figure class="card__content">
 									<picture>
-										<source>
 										<img src="img/card-20.jpg" srcset="img/card-20-@2x.jpg 2x" alt="Небоскребы советских времен" width="300" height="260">
 									</picture>
 									<a href="#" class="card__category">Украина</a>
@@ -1062,7 +1056,6 @@
 							<article class="card card--border">
 								<figure class="card__content">
 									<picture>
-										<source>
 										<img src="img/card-21.jpg" srcset="img/card-21-@2x.jpg 2x" alt="Музей Островского в Шепетовке " width="300" height="260">
 									</picture>
 									<a href="#" class="card__category">Украина</a>
@@ -1281,7 +1274,11 @@
 						<div class="footer__sign">
 							<picture>
 								<img src="img/advertising10-@1x.jpg"  alt="Журнал" width="100" height="125">
+							</picture>
+							<picture>
 								<img src="img/advertising11-@1x.jpg"  alt="Журнал" width="100" height="125">
+							</picture>
+							<picture>
 								<img src="img/advertising12-@1x.jpg"  alt="Журнал" width="87" height="114">
 							</picture>
 							<div class="footer__sign-text">
@@ -1323,6 +1320,23 @@
 
 				</div>
 			</footer>
+
+			<!-- Modal -->
+			<div class="modal">
+				<a href="https://focus.ua/uk" class="header__logo header__logo--modal">
+					<img src="img/focus.svg" alt="Фокус служба новостей" width="166" height="36">
+				</a>
+				<button class="modal__close" title="Закрыть" ></button>
+				 <form class="modal__form" method="get">
+					<input class="modal__input" type="text" placeholder="Искать по сайту">
+					<button class="modal__serch">
+						<svg width="40" height="40" viewBox="0 0 20 20" fill="#ed3237" xmlns="http://www.w3.org/2000/svg">
+							<path  d="M19.7236 18.263L16.0223 14.5658C18.8541 11.0422 18.5809 5.83127 15.3516 2.63027C13.6624 0.942928 11.4019 0 8.99236 0C6.5828 0 4.34713 0.942928 2.63312 2.63027C0.943949 4.31762 0 6.57568 0 8.98263C0 11.3896 0.943949 13.6228 2.63312 15.335C4.32229 17.0223 6.5828 17.9653 8.99236 17.9653C11.0293 17.9653 13.0166 17.2705 14.6064 16.005L18.3076 19.7022C18.5064 19.9007 18.7548 20 19.0032 20C19.2764 20 19.5248 19.9007 19.6987 19.7022C20.0962 19.2804 20.0962 18.66 19.7236 18.263ZM15.9975 8.95782C15.9975 10.8189 15.2771 12.5806 13.9605 13.8958C12.644 15.2109 10.8803 15.9305 9.0172 15.9305C7.15414 15.9305 5.39045 15.2109 4.07389 13.8958C2.75733 12.5806 2.03694 10.8189 2.03694 8.95782C2.03694 7.09678 2.75733 5.33499 4.07389 4.01985C5.39045 2.70471 7.15414 1.98511 9.0172 1.98511C10.8803 1.98511 12.644 2.70471 13.9605 4.01985C15.2771 5.33499 15.9975 7.09678 15.9975 8.95782Z"/>
+						</svg>
+					</button>
+				 </form>
+			 </div>
+
 
 			<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 			<script src="js/script.js"></script>
