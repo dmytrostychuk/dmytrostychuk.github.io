@@ -16,12 +16,12 @@
 						<button type="button" class="burger-bth">
 							<span></span>
 						</button>
-						<h1>
+						<h1 class="header__title">
 							<a href="https://focus.ua/uk" class="header__logo">
 								<img src="img/focus.svg" alt="Фокус служба новостей">
 							</a>
 						</h1>
-						<ul class="header__list">
+						<ul class="header__list desk">
 							<li class="header__item"><a href="#">Категории</a></li>
 							<li class="header__item"><a href="#">Спецтема</a></li>
 							<li class="header__item"><a href="#">Рейтинги</a></li>
@@ -58,6 +58,18 @@
 									<li class="nav__item"><a href="#">Спорт</a></li>
 									<li class="nav__item"><a href="#">Культура</a></li>
 								</ul>
+								<div class="laptop">
+									<div class="nav__tittle">
+										Материал
+									</div>
+									<ul class="nav__list ">
+										<li class="nav__item"><a href="#">Категории</a></li>
+										<li class="nav__item"><a href="#">Спецтема</a></li>
+										<li class="nav__item"><a href="#">Рейтинги</a></li>
+										<li class="nav__item"><a href="#">Подписка</a></li>
+									</ul>
+								</div>
+								
 							</div>
 						</div>
 					</nav>
@@ -74,12 +86,12 @@
 							<ul class="special__list">
 								<li class="special__block block-1">
 									<p class="special__tittle">
-										<a href="#">Леди в законе. Особый статус<br> для жены президента</a>
+										<a href="#">Леди в законе. <span class="desk">Особый статус для жены президента</span></a>
 									</p>
 								</li>
 								<li class="special__block block-2">
 									<p class="special__tittle">
-										<a href="#">Взрыв на Позняках<br> в Киеве</a>
+										<a href="#">Взрыв на Позняках в Киеве</a>
 									</p>
 								</li>
 								<li class="special__block block-3">
@@ -89,7 +101,7 @@
 								</li>
 								<li class="special__block block-4">
 									<p class="special__tittle">
-										<a href="#">Цифровая трансформация<br> бизнеса Украины</a>
+										<a href="#">Цифровая трансформация <span class="desk"> бизнеса Украины</span></a>
 									</p>
 								</li>
 							</ul>
@@ -99,7 +111,8 @@
 								<article class="page">
 									<figure class="page__content">
 										<picture>
-											<img src="img/section__page.jpg" alt="Статус жены президента" width="1274" height="466">
+											<source>
+											<img src="img/block-1.jpg" alt="Статус жены президента" width="1274" height="466">
 										</picture>
 										<a href="#" class="page__category">Политика</a>
 										<figcaption class="page__figcaption">
@@ -181,6 +194,8 @@
 							<article class="card card--border">
 								<figure class="card__content">
 									<picture>
+										<source srcset="img/card-1.jpg" media="(max-width: 768px)" width="100px">
+										<source srcset="img/card-1.jpg" media="(max-width: 1200px)" width="200px">
 										<img src="img/card-1.jpg" srcset="img/card-1-@2x.jpg 2x" alt="Про коронавирус" width="297" height="260">
 									</picture>
 									<a href="#" class="card__category">Украина</a>
@@ -195,9 +210,11 @@
 								<time datetime="2022-01-20T12:48:42Z" class="card__time">15:44</time>
 							</article>
 							<!-- card-2  -->
-							<article class="card card--border">
-								<figure class="card__content">
+							<article class="card card--border desk">
+								<figure class="card__content ">
 									<picture>
+										<source srcset="img/card-2.jpg" media="(max-width: 768px)" width="100px">
+										<source srcset="img/card-2.jpg" media="(max-width: 1200px)" width="200px">
 										<img src="img/card-2.jpg" srcset="img/card-2-@2x.jpg 2x" alt="5G влияние на здоровье" width="300" height="260">
 									</picture>
 									<a href="#" class="card__category">Технологии и наука</a>
@@ -212,9 +229,11 @@
 								<time datetime="2022-01-20T12:48:42Z" class="card__time">15:44</time>
 							</article>
 							<!-- card-3 -->
-							<article class="card">
+							<article class="card card--width">
 								<figure class="card__content">
 									<picture>
+										<source srcset="img/card-3.jpg" media="(max-width: 768px)" width="100px">
+										<source srcset="img/card-3.jpg" media="(max-width: 1200px)" width="250px">
 										<img src="img/card-3.jpg" srcset="img/card-3-@2x.jpg 2x" alt="Звезды шоу-бизнеса" width="300" height="399">
 									</picture>
 									<a href="#" class="card__category-long">Рейтинг</a>
@@ -235,6 +254,8 @@
 							<article class="card card--border">
 								<figure class="card__content">
 									<picture>
+										<source srcset="img/card-4.jpg" media="(max-width: 768px)" width="100px">
+										<source srcset="img/card-4.jpg" media="(max-width: 1200px)" width="200px">
 										<img src="img/card-4.jpg" srcset="img/card-4-@2x.jpg 2x" alt="Скандал в Слуге народа" width="300" height="260">
 									</picture>
 									<a href="#" class="card__category">Политика</a>
@@ -252,6 +273,8 @@
 							<article class="card">
 								<figure class="card__content">
 									<picture>
+										<source srcset="img/card-5.jpg" media="(max-width: 768px)" width="100px" >
+										<source srcset="img/card-5.jpg" media="(max-width: 1200px)" width="200px" height="240px">
 										<img src="img/card-5.jpg" srcset="img/card-5-@2x.jpg 2x" alt="5G влияние на здоровье" width="296" height="293">
 									</picture>
 									<a href="#" class="card__category-long card__category-shot">Технологии и наука</a>
@@ -266,9 +289,11 @@
 								</figure>
 							</article>
 							<!-- card-6 -->
-							<article class="card card--border">
+							<article class="card card--border card--width">
 								<figure class="card__content">
 									<picture>
+										<source srcset="img/card-6.jpg" media="(max-width: 768px)" width="100px">
+										<source srcset="img/card-6.jpg" media="(max-width: 1200px)" width="250px">
 										<img src="img/card-6.jpg" srcset="img/card-6-@2x.jpg 2x" alt="Глава МОН" width="301" height="148">
 									</picture>
 									<a href="#" class="card__category card__category-shotb">Политика</a>
@@ -286,6 +311,8 @@
 							<article class="card card--border">
 								<figure class="card__content">
 									<picture>
+										<source srcset="img/card-7.jpg" media="(max-width: 768px)" width="100px">
+										<source srcset="img/card-7.jpg" media="(max-width: 1200px)" width="200px">
 										<img src="img/card-7.jpg" srcset="img/card-7-@2x.jpg 2x" alt="Агент изменений" width="300" height="148">
 									</picture>
 									<a href="#" class="card__category card__category-shotb">Технологии и наука</a>
@@ -300,9 +327,11 @@
 								<time datetime="2022-01-20T12:48:42Z" class="card__time">15:44</time>
 							</article>
 							<!-- card-8 -->
-							<article class="card">
+							<article class="card desk">
 								<figure class="card__content">
 									<picture>
+										<source srcset="img/card-8.jpg" media="(max-width: 768px)" width="100px">
+										<source srcset="img/card-8.jpg" media="(max-width: 1200px)" width="200px">
 										<img src="img/card-8.jpg" srcset="img/card-8-@2x.jpg 2x" alt="Звезды шоу-бизнеса" width="300" height="293">
 									</picture>
 									<a href="#" class="card__category-long card__category-shot">Политика</a>
@@ -320,7 +349,7 @@
 
 						<!-- preview -->
 						<section class="preview">
-							<article class="preview__page">
+							<article class="preview__page desk">
 								<figure class="preview__content">
 									<picture>
 										<img src="img/preview1.jpg" srcset="img/preview1-@2x.jpg 2x" alt="Потоп на западной Украине" width="1273" height="302">
@@ -545,781 +574,8 @@
 					</div>
 				</div>
 
-				<!-- slider sliders-three  -->
-				<div class="slider slider-first">
-					
-					<h2 class="page__tittle page__title--slider">
-						<a href="#">Рейтинги</a>
-					</h2>
-					<div class="slider__container slider-first__container">
-						<!-- swiper-button -->
-						<div class="swiper-button-next slider-first__next"></div>
-						<div class="swiper-button-prev slider-first__prev"></div>
-						<!-- swiper -->
-						<div class="swiper slider-first__swiper">
-							<div class="swiper-wrapper ">
-								<!-- card-1  -->
-								<div class="swiper-slide">
-									<article class="card slider-first__card">
-										<figure class="card__content">
-											<picture>
-												<img src="img/slider-news1-1.jpg" srcset="img/slider-news1-1-@2x.jpg 2x" alt="Самые влиятельные украинцы" width="408" height="515">
-											</picture>
-											<a href="#" class="card__category-long slider-first__category">Рейтинг</a>
-											<figcaption class="card__figcaption">
-												<h3 class="slider-first__title">
-													<a href="#" class="card__title-long slider-first__title-link">
-														<span class="slider-first__link-span">
-															100
-														</span>
-														Рейтинг 2019<br><br>
-														Самые влиятельные украинцы
-													</a>
-												</h3>
-											</figcaption>
-										</figure>
-									</article>
-								</div>
-								<!-- card-2  -->
-								<div class="swiper-slide">
-									<article class="card slider-first__card">
-											<figure class="card__content slider-first__content">
-												<picture>
-													<img src="img/slider-news1-2.svg" alt="30 лучших работодателей Украины" width="408" height="515">
-												</picture>
-												<a href="#" class="card__category-long slider-first__category slider-first__category-black ">Рейтинг</a>
-												<figcaption class="card__figcaption">
-													<h3 class="rating__title">
-														<a href="#" class="card__title-long slider-first__title-link slider-first__title-linkw">
-															Бунт кнопок. 30 лучших работодателей Украины — рейтинг Фокуса
-														</a>
-													</h3>
-												</figcaption>
-											</figure>
-									</article>
-								</div>
-								<!-- card-3 -->
-								<div class="swiper-slide">
-									<article class="card slider-first__card">
-									<figure class="card__content">
-										<picture>
-											<img src="img/slider-news1-3.svg" alt="Самые богатые украинцы" width="408" height="515">
-										</picture>
-										<a href="#" class="card__category-long slider-first__category">Рейтинг</a>
-										<figcaption class="card__figcaption">
-											<h3 class="slider-first__title slider-first__title-black">
-												<a href="#" class="card__title-long slider-first__title-link slider-first__title-linkb">
-													<span class="slider-first__link-span">
-														100
-													</span>
-													Самые богатые люди Украины. Полный список
-												</a>
-											</h3>
-										</figcaption>
-									</figure>
-									</article>
-								</div>
-								<!-- card-4  -->
-								<div class="swiper-slide">
-									<article class="card slider-first__card">
-										<figure class="card__content">
-											<picture>
-												<img src="img/slider-news1-1.jpg" srcset="img/slider-news1-1-@2x.jpg 2x" alt="Самые влиятельные украинцы" width="408" height="515">
-											</picture>
-											<a href="#" class="card__category-long slider-first__category">Рейтинг</a>
-											<figcaption class="card__figcaption">
-												<h3 class="slider-first__title">
-													<a href="#" class="card__title-long slider-first__title-link">
-														<span class="slider-first__link-span">
-															100
-														</span>
-														Рейтинг 2019<br><br>
-														Самые влиятельные украинцы
-													</a>
-												</h3>
-											</figcaption>
-										</figure>
-									</article>
-								</div>
-								<!-- card-5  -->
-								<div class="swiper-slide">
-									<article class="card slider-first__card">
-											<figure class="card__content slider-first__content">
-												<picture>
-													<img src="img/slider-news1-2.svg" alt="30 лучших работодателей Украины" width="408" height="515">
-												</picture>
-												<a href="#" class="card__category-long slider-first__category slider-first__category-black ">Рейтинг</a>
-												<figcaption class="card__figcaption">
-													<h3 class="rating__title">
-														<a href="#" class="card__title-long slider-first__title-link slider-first__title-linkw">
-															Бунт кнопок. 30 лучших работодателей Украины — рейтинг Фокуса
-														</a>
-													</h3>
-												</figcaption>
-											</figure>
-									</article>
-								</div>
-								<!-- card-6 -->
-								<div class="swiper-slide">
-									<article class="card slider-first__card">
-									<figure class="card__content">
-										<picture>
-											<img src="img/slider-news1-3.svg" alt="Самые богатые украинцы" width="408" height="515">
-										</picture>
-										<a href="#" class="card__category-long slider-first__category">Рейтинг</a>
-										<figcaption class="card__figcaption">
-											<h3 class="slider-first__title slider-first__title-black">
-												<a href="#" class="card__title-long slider-first__title-link slider-first__title-linkb">
-													<span class="slider-first__link-span">
-														100
-													</span>
-													Самые богатые люди Украины. Полный список
-												</a>
-											</h3>
-										</figcaption>
-									</figure>
-									</article>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<!-- wrapper -->
-				<div class="wrapper wrapper--shadow">
-					<div class="container">
-						<h2 class="page__tittle">
-							<a href="#">Украина</a>
-						</h2>
-						<!-- block three -->
-						<section class="block block--three">
-							<!-- card-1  -->
-							<article class="card card--border">
-								<figure class="card__content">
-									<picture>
-										<img src="img/card-13.jpg" srcset="img/card-13-@2x.jpg 2x" alt="Проверка доверия" width="298" height="260">
-									</picture>
-									<a href="#" class="card__category">Украина</a>
-									<figcaption class="card__figcaption">
-										<h3 class="card__title card__title-category">
-											<a href="#" class="card__title-link">
-												Проверка доверия: владелец «Три Н» Максим Криппа о махинациях в благотворительности
-											</a>
-										</h3>
-									</figcaption>
-								</figure>
-								<time datetime="2022-01-20T12:48:42Z" class="card__time">15:44</time>
-							</article>
-							<!-- card-2  -->
-							<article class="card card--border">
-								<figure class="card__content">
-									<picture>
-										<img src="img/card-14.jpg" srcset="img/card-14-@2x.jpg 2x" alt="Про коронавирус" width="300" height="260">
-									</picture>
-									<a href="#" class="card__category">Украина</a>
-									<figcaption class="card__figcaption">
-										<h3 class="card__title card__title-category">
-											<a href="#" class="card__title-link">
-												Выход из карантина: Кабмин разрешил открыть кинотеатры со 2 июля
-											</a>
-										</h3>
-									</figcaption>
-								</figure>
-								<time datetime="2022-01-20T12:48:42Z" class="card__time">15:44</time>
-							</article>
-							<!-- card-3  -->
-							<article class="card card--half">
-								<figure class="card__content">
-									<picture>
-										<img src="img/card-15.jpg" srcset="img/card-15-@2x.jpg 2x" alt="Grand Hotel Lviv Luxury & SPA" width="623" height="399">
-									</picture>
-									<a href="#" class="card__category-long card__category-shot">фото дня</a>
-									<figcaption class="card__figcaption-shot">
-										<h3 class="card__title card__title-shot">
-											<a href="#" class="card__link-shot">
-												Бизнес и немного удовольствия:<br/> Grand Hotel Lviv Luxury & SPA
-											</a>
-										</h3>
-									</figcaption>
-								</figure>
-							</article>
-							<!-- card-4  -->
-							<article class="card card--border">
-								<figure class="card__content">
-									<picture>
-										<img src="img/card-16.jpg" srcset="img/card-16-@2x.jpg 2x" alt="мигрантов" width="300" height="260">
-									</picture>
-									<a href="#" class="card__category">Украина</a>
-									<figcaption class="card__figcaption">
-										<h3 class="card__title card__title-category">
-											<a href="#" class="card__title-link">
-												Пора домой. Истории мигрантов, которые вернулись в Украину из<br>
-												ОАЭ, Китая и Польши
-											</a>
-										</h3>
-									</figcaption>
-								</figure>
-								<time datetime="2022-01-20T12:48:42Z" class="card__time">15:44</time>
-							</article>
-							<!-- card-5  -->
-							<article class="card card--opinion">
-								<p class="card__text-opinion">
-									Мнение
-								</p>
-								<figure class="card__content-opinion block--opinion">
-									<figcaption class="card__figcaption-opinion">
-										<blockquote class="card__title card__title-opinion">
-											<a href="#" class="card__link-opinion">
-												“Государство или смерть. Какой кризис станет для Украины последним”
-											</a>
-										</blockquote>
-									</figcaption>
-								</figure>
-								<figure class="card__opinion-autor">
-									<img src="img/author2.jpg" alt="Автор" width="31" height="31">
-									<figcaption>
-										<a href="#" class="autor__white">
-											Михаил Багинский
-										</a>
-									</figcaption>
-								</figure>
-							</article>
-							<!-- card-6  -->
-							<article class="card card--border">
-								<figure class="card__content">
-									<picture>
-										<img src="img/card-17.jpg" srcset="img/card-17-@2x.jpg 2x" alt="Бетонная пята" width="300" height="260">
-									</picture>
-									<a href="#" class="card__category">Украина</a>
-									<figcaption class="card__figcaption">
-										<h3 class="card__title card__title-category">
-											<a href="#" class="card__title-link">
-												Бетонная пята. Как застройщики превращают украинские города в ад
-											</a>
-										</h3>
-									</figcaption>
-								</figure>
-								<time datetime="2022-01-20T12:48:42Z" class="card__time">15:44</time>
-							</article>
-							<!-- card-7  -->
-							<article class="card card--border">
-								<figure class="card__content">
-									<picture>
-										<img src="img/card-18.jpg" srcset="img/card-18-@2x.jpg 2x" alt="Смерть марафонца" width="300" height="260">
-									</picture>
-									<a href="#" class="card__category">Украина</a>
-									<figcaption class="card__figcaption">
-										<h3 class="card__title card__title-category">
-											<a href="#" class="card__title-link">
-												Смерть марафонца. Можно ли было спасти Екатерину Катющеву
-											</a>
-										</h3>
-									</figcaption>
-								</figure>
-								<time datetime="2022-01-20T12:48:42Z" class="card__time">15:44</time>
-							</article>
-						</section>
-					</div>
-				</div>
-
-				<!-- slider slider-second -->
-				<div class="slider slider-second">
-					<div class="swiper-button-next slider-second__next"></div>
-					<div class="swiper-button-prev slider-second__prev"></div>
-					<div class="slider__container slider-second__container">
-						<h2 class="page__tittle page__tittle--popular">
-							<a href="#">Сейчас популярно</a>
-						</h2>
-						<div class="swiper slider-second__swiper">
-							<div class="swiper-wrapper ">
-								<!-- card-1  -->
-								<div class="swiper-slide">
-									<article class="card">
-										<figure class="card__content">
-											<picture>
-												<img src="img/slider-news2-1.jpg" srcset="img/slider-news2-1-@2x.jpg 2x" alt="Жертвы собственной пропаганды" width="298" height="293">
-											</picture>
-											<a href="#" class="card__category-long card__category-shot">Протесты в сша</a>
-											<figcaption class="card__figcaption-shot slider-second__figcaption">
-												<h3 class="card__title-shot slider-second__card">
-													<a href="#" class="card__link-shot">
-														Жертвы собственной пропаганды. Как либеральные могут проиграть холодную войну
-													</a>
-												</h3>
-												<time datetime="2022-01-20T12:48:42Z" class="card__time card__times">15:44</time>
-											</figcaption>
-										</figure>
-									</article>
-								</div>
-								<!-- card-2  -->
-								<div class="swiper-slide">
-									<article class="card">
-										<figure class="card__content">
-											<picture>
-												<img src="img/slider-news2-2.jpg"  alt="Австралиец выловил рекордного красного императора" width="302" height="293">
-											</picture>
-											<a href="#" class="card__category-long card__category-shot">Мир</a>
-											<figcaption class="card__figcaption-shot slider-second__figcaption">
-												<h3 class=" card__title-shot slider-second__card">
-													<a href="#" class="card__link-shot">
-														Австралиец выловил рекордного красного императора и решил передать его ученым
-													</a>
-												</h3>
-												<time datetime="2022-01-20T12:48:42Z" class="card__time card__times">15:44</time>
-											</figcaption>
-										</figure>
-									</article>
-								</div>
-								<!-- card-3  -->
-								<div class="swiper-slide">
-									<article class="card">
-										<figure class="card__content">
-											<picture>
-												<img src="img/slider-news2-3.jpg" alt="Смые пожилые рекорсмены из Книги рекордов Гиннеса" width="300" height="293">
-											</picture>
-											<a href="#" class="card__category-long slider-second__category">Мир</a>
-											<figcaption class="card__figcaption-shot slider-second__figcaption">
-												<h3 class="slider-second__card-white slider-second__card">
-													<a href="#" class="card__link-shot slider-second__link">
-														Жизнь за 80. 5 самых пожилых рекорсменов из Книги рекордов Гиннеса
-													</a>
-												</h3>
-												<time datetime="2022-01-20T12:48:42Z" class="card__time card__times slider-second__time">15:44</time>
-											</figcaption>
-										</figure>
-									</article>
-								</div>
-								<!-- card-4  -->
-								<div class="swiper-slide">
-									<article class="card">
-										<figure class="card__content">
-											<picture>
-												<img src="img/slider-news2-4.jpg" srcset="img/slider-news2-4-@2x.jpg 2x" alt="Как коронавирус и карантин навсегда изменили стиль" width="301" height="293">
-											</picture>
-											<a href="#" class="card__category-long card__category-shot">Мир</a>
-											<figcaption class="card__figcaption-shot slider-second__figcaption">
-												<h3 class=" card__title-shot slider-second__card ">
-													<a href="#" class="card__link-shot">
-														Дресс-код постапокалипсиса. Как коронавирус и карантин навсегда изменили стиль
-													</a>
-												</h3>
-												<time datetime="2022-01-20T12:48:42Z" class="card__time card__times">15:44</time>
-											</figcaption>
-										</figure>
-									</article>
-								</div>
-								<!-- card-5  -->
-								<div class="swiper-slide">
-									<article class="card">
-										<figure class="card__content">
-											<picture>
-												<img src="img/slider-news2-1.jpg" srcset="img/slider-news2-1-@2x.jpg 2x" alt="Жертвы собственной пропаганды" width="298" height="293">
-											</picture>
-											<a href="#" class="card__category-long card__category-shot">Протесты в сша</a>
-											<figcaption class="card__figcaption-shot slider-second__figcaption">
-												<h3 class="card__title-shot slider-second__card">
-													<a href="#" class="card__link-shot">
-														Жертвы собственной пропаганды. Как либеральные могут проиграть холодную войну
-													</a>
-												</h3>
-												<time datetime="2022-01-20T12:48:42Z" class="card__time card__times">15:44</time>
-											</figcaption>
-										</figure>
-									</article>
-								</div>
-								<!-- card-6  -->
-								<div class="swiper-slide">
-									<article class="card">
-										<figure class="card__content">
-											<picture>
-												<img src="img/slider-news2-2.jpg" alt="Австралиец выловил рекордного красного императора" width="302" height="293">
-											</picture>
-											<a href="#" class="card__category-long card__category-shot">Мир</a>
-											<figcaption class="card__figcaption-shot slider-second__figcaption">
-												<h3 class=" card__title-shot slider-second__card">
-													<a href="#" class="card__link-shot">
-														Австралиец выловил рекордного красного императора и решил передать его ученым
-													</a>
-												</h3>
-												<time datetime="2022-01-20T12:48:42Z" class="card__time card__times">15:44</time>
-											</figcaption>
-										</figure>
-									</article>
-								</div>
-								<!-- card-7  -->
-								<div class="swiper-slide">
-									<article class="card">
-										<figure class="card__content">
-											<picture>
-												<img src="img/slider-news2-3.jpg" alt="Смые пожилые рекорсмены из Книги рекордов Гиннеса" width="300" height="293">
-											</picture>
-											<a href="#" class="card__category-long slider-second__category">Мир</a>
-											<figcaption class="card__figcaption-shot slider-second__figcaption">
-												<h3 class="slider-second__card-white slider-second__card">
-													<a href="#" class="card__link-shot slider-second__link">
-														Жизнь за 80. 5 самых пожилых рекорсменов из Книги рекордов Гиннеса
-													</a>
-												</h3>
-												<time datetime="2022-01-20T12:48:42Z" class="card__time card__times slider-second__time">15:44</time>
-											</figcaption>
-										</figure>
-									</article>
-								</div>
-								<!-- card-8  -->
-								<div class="swiper-slide">
-									<article class="card">
-										<figure class="card__content">
-											<picture>
-												<img src="img/slider-news2-4.jpg" srcset="img/slider-news2-4-@2x.jpg 2x" alt="5G влияние на здоровье" width="301" height="293">
-											</picture>
-											<a href="#" class="card__category-long card__category-shot">Мир</a>
-											<figcaption class="card__figcaption-shot slider-second__figcaption">
-												<h3 class=" card__title-shot slider-second__card ">
-													<a href="#" class="card__link-shot">
-														Дресс-код постапокалипсиса. Как коронавирус и карантин навсегда изменили стиль
-													</a>
-												</h3>
-												<time datetime="2022-01-20T12:48:42Z" class="card__time card__times">15:44</time>
-											</figcaption>
-										</figure>
-									</article>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<!-- wrapper  -->
-				<div class="wrapper wrapper--shadow">
-					<div class="container">
-						<h2 class="page__tittle page__title--country">
-							<a href="#">Красивая страна</a>
-						</h2>
-
-						<!-- block four -->
-						<section class="block block--four">
-							<!-- card-1  -->
-							<article class="card card--border">
-								<figure class="card__content">
-									<picture>
-										<img src="img/card-19.jpg" srcset="img/card-19-@2x.jpg 2x" alt="Наказание карантином" width="297" height="260">
-									</picture>
-									<a href="#" class="card__category">Украина</a>
-									<figcaption class="card__figcaption">
-										<h3 class="card__title">
-											<a href="#" class="card__title-link">
-												Наказание карантином. Чем грозит Украине вторая волна борьбы с коронавирусом
-											</a>
-										</h3>
-									</figcaption>
-								</figure>
-								<time datetime="2022-01-20T12:48:42Z" class="card__time">15:44</time>
-							</article>
-							<!-- card-2  -->
-							<article class="card card--border">
-								<figure class="card__content">
-									<picture>
-										<img src="img/card-20.jpg" srcset="img/card-20-@2x.jpg 2x" alt="Небоскребы советских времен" width="300" height="260">
-									</picture>
-									<a href="#" class="card__category">Украина</a>
-									<figcaption class="card__figcaption">
-										<h3 class="card__title card__title--country">
-											<a href="#" class="card__title-link">
-												Небоскребы советских времен. Три маршрута к памятникам советского модернизма в Киеве
-											</a>
-										</h3>
-									</figcaption>
-								</figure>
-								<time datetime="2022-01-20T12:48:42Z" class="card__time">12 июня 2020 о 03:11</time>
-							</article>
-							<!-- card-3  -->
-							<article class="card">
-								<figure class="card__content">
-									<picture>
-										<img src="img/card-3.jpg" srcset="img/card-3-@2x.jpg 2x" alt="Звезды шоу-бизнеса" width="300" height="399">
-									</picture>
-									<a href="#" class="card__category-long">Рейтинг</a>
-									<figcaption class="card__figcaption">
-										<h3>
-											<a href="#" class="card__title-long">
-												<span>
-													100
-												</span>
-												Из песни слов не выкинешь. Рейтинг Фокуса: 
-												самые успешные звезды шоу-бизнеса
-											</a>
-										</h3>
-									</figcaption>
-								</figure>
-							</article>
-							<!-- card-4  -->
-							<article class="card card--border">
-								<figure class="card__content">
-									<picture>
-										<img src="img/card-21.jpg" srcset="img/card-21-@2x.jpg 2x" alt="Музей Островского в Шепетовке " width="300" height="260">
-									</picture>
-									<a href="#" class="card__category">Украина</a>
-									<figcaption class="card__figcaption">
-										<h3 class="card__title card__title--four">
-											<a href="#" class="card__title-link">
-												Как закалилась сталь. Музей Островского в Шепетовке — памятник архитектуры, а не идеологии
-											</a>
-										</h3>
-									</figcaption>
-								</figure>
-								<time datetime="2022-01-20T12:48:42Z" class="card__time">12 июня 2020 о 03:11</time>
-							</article>
-						</section>
-
-						<!-- slider-third -->
-						<div class="swiper slider-third">
-							<div class="swiper-button-next slider-third__next"></div>
-							<div class="swiper-button-prev slider-third__prev"></div>
-							<div class="swiper-wrapper ">
-								<!-- card-1  -->
-								<div class="swiper-slide">
-									<article class="page slider-third__page">
-										<figure class="page__content ">
-											<picture>
-												<img src="img/section__page1.jpg" alt="Почему украинки участвуют в боях без правил" width="1272" height="399">
-											</picture>
-											<a href="#" class="page__category slider-third__category">Длинный фокус</a>
-											<figcaption class="page__figcaption slider-third__figcaption">
-												<h3 class="slider-third__title">
-													<a href="#" class="page__title-link slider-third__link">
-														Ни тоски, ни жалости
-													</a>
-												</h3>
-												<p class="page__explanation slider-third__explanation">
-													Почему украинки участвуют в боях без правил
-												</p>
-											</figcaption>
-										</figure>
-									</article>
-								</div>
-								<!-- card-2  -->
-								<div class="swiper-slide">
-									<article class="page slider-third__page">
-										<figure class="page__content">
-											<picture>
-												<img src="img/section__page.jpg" alt="Статус жены президента" width="1272" height="399">
-											</picture>
-											<a href="#" class="page__category">Политика</a>
-											<figcaption class="page__figcaption slider-third__figcaption--long">
-												<h3>
-													<a href="#" class="page__title-link">
-														Леди в законе. Зачем Зеленскому понадобился особый статус для жены президента
-													</a>
-												</h3>
-												<p class="page__explanation">
-													Владимир Зеленский загорелся идеей разработки закона о первой леди. Для чего ему это понадобилось, и какие права и обязанности возлагаются на супругу главы государства в Украине 
-												</p>
-											</figcaption>
-										</figure>
-									</article>
-								</div>
-							</div>
-						</div>
-
-						<!-- block-five -->
-						<section class="block block-five">
-							<!-- card-1  -->
-							<article class="card card--border">
-								<figure class="card__content">
-									<picture>
-										<img src="img/card-22.jpg" srcset="img/card-22-@2x.jpg 2x" alt="Финал Кубка Украины по футболу перенесут из Львова в Харьков" width="297" height="148">
-									</picture>
-									<a href="#" class="card__category card__category-shotb">Cпорт</a>
-									<figcaption class="card__figcaption">
-										<h3 class="card__title">
-											<a href="#" class="card__title-link">
-												Финал Кубка Украины по футболу перенесут из Львова в Харьков, – СМИ
-											</a>
-										</h3>
-									</figcaption>
-								</figure>
-								<time datetime="2022-01-20T12:48:42Z" class="card__time">15:44</time>
-							</article>
-							<!-- card-2  -->
-							<article class="card card--border">
-								<figure class="card__content">
-									<a href="#" class="card__category card__category-nophoto">Коронавирус в Украине</a>
-									<figcaption class="card__figcaption-nophoto">
-										<h3 class="card__title card__title-nophoto">
-											<a href="#" class="card__title-link">
-												Это винтажная атмосфера. MONATIK — о том, что такое карантин с оптимистической точки зрения
-											</a>
-										</h3>
-										<p class="card__explanation card__explanation--five">
-											Коронавирус перевел всех в осадное положение. Пока концертные залы пусты, выступления проходят в режиме онлайн или не проходят вообще.
-										</p>
-									</figcaption>
-								</figure>
-								<time datetime="2022-01-20T12:48:42Z" class="card__time">14 июня 2020 о 16:51</time>
-							</article>
-							<!-- card-3  -->
-							<article class="card">
-								<figure class="card__content">
-									<picture>
-										<img src="img/card-12.jpg" srcset="img/card-12-@2x.jpg" alt="Обзор Юрия Володарского" width="297" height="148">
-									</picture>
-									<a href="#" class="card__category card__category-shotb">Культура</a>
-									<figcaption class="card__figcaption">
-										<h3 class="card__title card__title--five">
-											<a href="#" class="card__title-link">
-												Обзор Юрия Володарского: 5 книг для тех, кто предпочитает "короткий метр" в литературе
-											</a>
-										</h3>
-									</figcaption>
-								</figure>
-								<time datetime="2022-01-20T12:48:42Z" class="card__time">15:44</time>
-							</article>
-							<!-- card-4  -->
-							<article class="card">
-								<a href="#">
-									<img src="img/advertising7-@1x.jpg" srcset="img/advertising7-@2x.jpg 2x" alt="Реклама ОККО" width="300" height="250">
-								</a>	
-							</article>
-							<!-- card-5  -->
-							<article class="card card--border">
-								<figure class="card__content">
-									<picture>
-										<img src="img/card-23.jpg" srcset="img/card-23-@2x.jpg 2x" alt="Вдохновленные ностальгией" width="297" height="148">
-									</picture>
-									<a href="#" class="card__category card__category-shotb">Авто</a>
-									<figcaption class="card__figcaption">
-										<h3 class="card__title card__title--five">
-											<a href="#" class="card__title-link">
-												Вдохновленные ностальгией. 3 лимитированные серии автомобилей, посвященные славному прошлому
-											</a>
-										</h3>
-									</figcaption>
-								</figure>
-								<time datetime="2022-01-20T12:48:42Z" class="card__time">15:44</time>
-							</article>
-							<!-- card-6  -->
-							<article class="card">
-								<a href="#">
-									<img src="img/advertising8-@1x.jpg" srcset="img/advertising8-@2x.jpg 2x" alt="Реклама ОККО" width="300" height="250">
-								</a>	
-							</article>
-							<!-- card-7  -->
-							<article class="card">
-								<figure class="card__content">
-									<picture>
-										<img src="img/card-24.jpg" srcset="img/card-24-@2x.jpg 2x" alt="«Умный дом» LG" width="299" height="293">
-									</picture>
-									<a href="#" class="card__category-long card__category-shot">Длинный фокус</a>
-									<figcaption class="card__figcaption-shot card__figcaption-shot--five">
-										<h3 class=" card__title-shot popular__card">
-											<a href="#" class="card__link-shot">
-												КОГДА ТЫ ДОМА: как «умный дом» LG приходит на выручку во времена турбулентности
-											</a>
-										</h3>
-										<time datetime="2022-01-20T12:48:42Z" class="card__time card__times">15:44</time>
-									</figcaption>
-								</figure>
-							</article>
-							<!-- card-8  -->
-							<article class="card card--border">
-								<figure class="card__content">
-									<a href="#" class="card__category card__category-nophoto">Архивариус</a>
-									<figcaption class="card__figcaption-nophoto">
-										<h3 class="card__title card__title-nophoto">
-											<a href="#" class="card__title-link">
-												Мосты всей жизни. В жизни Евгения Патона не было случайностей
-											</a>
-										</h3>
-										<p class="card__explanation card__explanation--five">
-											Его называли человеком из будущего, гениальные идеи которого по сей день используются при изготовлении сверхпрочных сплавов для мостов, железных дорог и даже космических станций. 
-										</p>
-									</figcaption>
-								</figure>
-								<time datetime="2022-01-20T12:48:42Z" class="card__time">15:44</time>
-							</article>
-						</section>
-
-						<!-- advertising -->
-						<div class="advertising">
-							<aside class="advertising__block">
-								<a href="#">
-									<img src="img/advertising9-@1x.jpg" srcset="img/advertising9-@2x.jpg 2x" alt="Реклама ОККО">
-								</a>
-							</aside>
-						</div>
-					</div>
-				</div>
 			</main>
-
-			<!-- footer -->
-			<footer class="footer"> 
-				<div class="footer__wrapper">
-					<a href="#" class="footer__logo"><img src="img/focus-footer.svg" alt="Новости Фокус"></a>
-					<!-- footer__menu -->
-					<div class="footer__menu">
-						<!-- footer__category -->
-						<div class="footer__category">
-							<ul class="footer__category-list">
-								<li class="footer__item"><a href="#">Политика</a></li>
-								<li class="footer__item"><a href="#">Украина</a></li>
-								<li class="footer__item"><a href="#">Экономика</a></li>
-								<li class="footer__item footer__item--shirt"><a href="#">Культура</a></li>
-								<li class="footer__item"><a href="#">Мнение</a></li>
-								<li class="footer__item"><a href="#">Рейтинги</a></li>
-								<li class="footer__item"><a href="#">Длинный фокус</a></li>
-								<li class="footer__item footer__item--shirt"><a href="#">Мир</a></li>
-							</ul>
-						</div>
-						<!-- footer__sign -->
-						<div class="footer__sign">
-							<picture>
-								<img src="img/advertising10-@1x.jpg"  alt="Журнал" width="100" height="125">
-							</picture>
-							<picture>
-								<img src="img/advertising11-@1x.jpg"  alt="Журнал" width="100" height="125">
-							</picture>
-							<picture>
-								<img src="img/advertising12-@1x.jpg"  alt="Журнал" width="87" height="114">
-							</picture>
-							<div class="footer__sign-text">
-								<p>
-									Гарантировано<br> получите скидку -10%
-								</p>
-								<button type="button" class="button button--footer">Подписаться</button>
-							</div>
-						</div>
-					</div>
-					<!-- footer__text -->
-					<div class="footer__text"> 
-						<div class="footer__text-block1">
-							<p>Все права на материалы, опубликованные на данном ресурсе, принадлежат ООО "ФОКУС МЕДИА". Какое-либо использование материалов без письменного разрешения ООО "ФОКУС МЕДИА" - запрещено. При использовании материалов с данного ресурса гиперссылка focus.ua обязательна.
-								</p>
-							<p>Данный ресурс — для пользователей возрастом от 18 лет и старше.</p>
-						</div>
-						<div class="footer__text-block2">
-							<p>
-								Перепечатка, копирование или воспроизведение информации, содержащей ссылку на агентство ИнА "Українські Новини", в каком-либо виде строго запрещены.
-							</p>
-							<p>
-								Все материалы, которые размещены на этом сайте со ссылкой на агентство "Интерфакс-Украина", не подлежат дальнейшему воспроизведению и/или распространению в любой форме, кроме как с письменного разрешения агентства.
-							</p>
-
-							<p>
-								Материалы с плашками "Р", "Новости партнеров", "Новости компаний", "Новости партий", "Инновации", "Позиция", "Спецпроект при поддержке" публикуются на коммерческой основе.
-							</p>
-						</div>
-					</div>
-					<div class="footer__copyright">
-						<p>
-							© 2020 Фокус. Все права защищены.
-						</p>
-						<p class="footer__copyright--paragraph">
-							Політика конфіденційності
-						</p>
-					</div>
-
-				</div>
-			</footer>
+			
 
 			<!-- Modal -->
 			<div class="modal">
