@@ -615,7 +615,7 @@ a:hover {
   left: 0;
 }
 
-.card__title-long span {
+.card__title-long .table {
   display: block;
   color: #ffffff;
   font-size: 100px;
@@ -907,6 +907,10 @@ a:hover {
   margin-top: 55px;
   padding: 0 55px;
   background-color: #ed3237;
+}
+
+.advertising__wrapper .laptop {
+  display: block;
 }
 
 .advertising__content {
@@ -1610,6 +1614,14 @@ a:hover {
     width: 300px;
   }
 
+  .card__large {
+    width: 60%;
+  }
+
+  .card--half {
+    width: 623px;
+  }
+
   .events {
     position: relative;
     display: -webkit-box;
@@ -1637,6 +1649,26 @@ a:hover {
 
   .events__time {
     color: #000000;
+  }
+
+  .advertising__wrapper {
+    padding: 0 31px;
+  }
+
+  .slider {
+    max-width: 100%;
+  }
+
+  .slider__container {
+    max-width: 1000px;
+  }
+
+  .slider-first {
+    max-width: 1200px;
+  }
+
+  .slider-first .card {
+    width: 408px;
   }
 }
 
@@ -1671,6 +1703,44 @@ a:hover {
     top: 70px;
   }
 
+  .card__large {
+    width: 100%;
+    background-position: 100% 100%;
+  }
+
+  .card__link-opinion {
+    font-size: 14px;
+  }
+
+  .card__title-opinion {
+    margin-bottom: 25px;
+  }
+
+  .card__category-tehnology {
+    top: 140px;
+  }
+
+  .card__category-nophoto {
+    top: 0;
+  }
+
+  .card--half {
+    width: 480px;
+  }
+
+  .block--three .block--opinion {
+    padding-bottom: 0;
+  }
+
+  .block--three .card__title-opinion {
+    padding-top: 50px;
+  }
+
+  .block--three .card__figcaption-opinion::after,
+  .block--three .card__figcaption-opinion::before {
+    top: 20px;
+  }
+
   .card--width {
     width: 250px;
   }
@@ -1679,12 +1749,16 @@ a:hover {
     margin: 0;
   }
 
+  .block--two .desk {
+    display: block;
+  }
+
   .container {
     width: 768px;
   }
 
   .events {
-    width: 768px;
+    width: 720px;
     min-height: 400px;
   }
 
@@ -1699,9 +1773,38 @@ a:hover {
   .events__time {
     color: #000000;
   }
+
+  .advertising__wrapper .laptop {
+    display: none;
+  }
+
+  .card__explanation {
+    padding-bottom: 40px;
+  }
+
+  .advertising__text {
+    font-size: 16px;
+    margin-top: 15px;
+  }
+
+  .slider {
+    max-width: 100%;
+  }
+
+  .slider__container {
+    max-width: 600px;
+  }
+
+  .slider-first {
+    max-width: 768px;
+  }
 }
 
 @media (max-width: 768px) {
+  .table {
+    display: none;
+  }
+
   .container {
     max-width: 410px;
   }
@@ -1724,6 +1827,106 @@ a:hover {
   }
 
   .block {
-    margin: 0 30px;
+    margin: 0;
+    margin-top: 30px;
+  }
+
+  .block .desk {
+    display: block;
+  }
+
+  .card {
+    width: 100%;
+    padding-bottom: 30px;
+  }
+
+  .card__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .card__title {
+    padding: 0;
+    padding-left: 15px;
+  }
+
+  .card__figcaption-shot {
+    position: relative;
+    padding: 0;
+  }
+
+  .card__title-long .table {
+    display: none;
+  }
+
+  .card__link-shot {
+    color: #000000;
+  }
+
+  .card__times {
+    left: -90px;
+    padding: 0;
+  }
+
+  .card__figcaption-opinion::after,
+  .card__figcaption-opinion::before {
+    background-image: none;
+  }
+
+  .card__title-nophoto {
+    padding: 0;
+  }
+
+  .card__explanation {
+    padding-bottom: 20px;
+  }
+
+  .events {
+    width: 410px;
+  }
+
+  .events__block {
+    width: 100%;
+    padding-bottom: 5px;
+  }
+
+  .card__large {
+    min-height: 370px;
+    background-color: #f4f4f4;
+  }
+
+  .card__large-content {
+    position: static;
+  }
+
+  .card__large img {
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+    width: 150px;
+    height: 140px;
+  }
+
+  .card__large-figcaption {
+    color: #000000;
+  }
+
+  .advert-photo {
+    margin: 0 auto;
+  }
+
+  .advertising__text {
+    margin-top: 0;
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .advertising__wrapper {
+    padding: 0 10px;
+  }
+
+  .advertising__sale {
+    margin: 0;
   }
 }
