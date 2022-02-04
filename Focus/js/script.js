@@ -87,6 +87,24 @@ const swiper = new Swiper('.slider-first__swiper', {
 
 	//Кількість слайдів для показу
 	slidesPerView: 3,
+
+	breakpoints: {
+		320: {
+			slidesPerView: 1,
+		},
+
+		768: {
+			slidesPerView: 1.3,
+		},
+
+		1200: {
+			slidesPerView: 2.3,
+		},
+
+		1472: {
+			slidesPerView: 3,
+		}
+	}
   });
 
   const swiper2 = new Swiper('.slider-second__swiper',{
