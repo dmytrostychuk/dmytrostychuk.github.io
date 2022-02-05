@@ -182,6 +182,36 @@ const swiper = new Swiper('.slider-first__swiper', {
 
 	// Кількість слайдів для показу
 	slidesPerView: 1,
+
+	autoplay: {
+		delay: 1500,
+		stopOnLastSlide: true,
+		disableOnInteraction: false
+	},
+
+	breakpoints: {
+		320: {
+			slidesPerView: 1,
+
+			// Безкінечність
+			loop: true,
+		},
+
+		768: {
+			autoplay:false,
+
+		},
+
+		1200: {
+			autoplay:false,
+
+		},
+
+		1472: {
+			autoplay:false,
+
+		}
+	}
 	
 	// Безкінечність
 	// loop: true,
