@@ -1663,6 +1663,11 @@ a:hover {
     max-width: 1000px;
   }
 
+  .slider-first,
+  .slider-second {
+    max-width: 1200px;
+  }
+
   .slider-first {
     max-width: 1200px;
   }
@@ -1795,8 +1800,13 @@ a:hover {
     max-width: 600px;
   }
 
-  .slider-first {
+  .slider-first,
+  .slider-second {
     max-width: 768px;
+  }
+
+  .slider-second .card {
+    width: 300px;
   }
 }
 
@@ -1928,5 +1938,39 @@ a:hover {
 
   .advertising__sale {
     margin: 0;
+  }
+
+  .slider__container {
+    width: 320px;
+  }
+
+  .slider-first,
+  .slider-second {
+    width: 410px;
+  }
+
+  .slider-first .card,
+  .slider-second .card {
+    width: 320px;
+  }
+
+  .slider-second .card__figcaption-shot {
+    position: absolute;
+    padding: 10px 13px;
+    font-size: 14px;
+  }
+
+  .slider-second .card__link-shot {
+    color: #ffffff;
+    font-size: 16px;
+  }
+
+  .slider-second .slider-second__link {
+    color: #000000;
+  }
+
+  .swiper-button-next::after,
+  .swiper-button-prev::after {
+    display: none;
   }
 }
