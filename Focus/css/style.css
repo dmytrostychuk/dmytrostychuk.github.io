@@ -1893,7 +1893,7 @@ a:hover {
   }
 
   .events {
-    width: 410px;
+    width: 320px;
   }
 
   .events__block {
@@ -1954,6 +1954,10 @@ a:hover {
     width: 320px;
   }
 
+  .slider-second {
+    margin-top: 40px;
+  }
+
   .slider-second .card__figcaption-shot {
     position: absolute;
     padding: 10px 13px;
@@ -1967,6 +1971,10 @@ a:hover {
 
   .slider-second .slider-second__link {
     color: #000000;
+  }
+
+  .slider-second .page__tittle--popular {
+    padding-top: 20px;
   }
 
   .swiper-button-next::after,
