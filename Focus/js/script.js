@@ -88,21 +88,38 @@ const swiper = new Swiper('.slider-first__swiper', {
 	//Кількість слайдів для показу
 	slidesPerView: 3,
 
+	autoplay: {
+		delay: 2000,
+		stopOnLastSlide: true,
+		disableOnInteraction: false
+	},
+
+	spead: 700,
+
 	breakpoints: {
 		320: {
 			slidesPerView: 1,
+
+			// Безкінечність
+			loop: true,
 		},
 
 		768: {
 			slidesPerView: 1.3,
+			autoplay:false,
+
 		},
 
 		1200: {
 			slidesPerView: 2.3,
+			autoplay:false,
+
 		},
 
 		1472: {
 			slidesPerView: 3,
+			autoplay:false,
+
 		}
 	}
   });
@@ -120,6 +137,39 @@ const swiper = new Swiper('.slider-first__swiper', {
 
 	// Відступ між слайдами
 	spaceBetween: 25,
+
+	autoplay: {
+		delay: 1500,
+		stopOnLastSlide: true,
+		disableOnInteraction: false
+	},
+
+	breakpoints: {
+		320: {
+			slidesPerView: 1,
+
+			// Безкінечність
+			loop: true,
+		},
+
+		768: {
+			slidesPerView: 2,
+			autoplay:false,
+
+		},
+
+		1200: {
+			slidesPerView: 3,
+			autoplay:false,
+
+		},
+
+		1472: {
+			slidesPerView: 4,
+			autoplay:false,
+
+		}
+	}
   });
 
   const swiper3 = new Swiper('.slider-third',{
