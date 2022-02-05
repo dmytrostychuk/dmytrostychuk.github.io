@@ -870,6 +870,7 @@ a:hover {
 
 .events__title {
   padding-bottom: 10px;
+  padding-right: 20px;
 }
 
 .events__link {
@@ -893,6 +894,7 @@ a:hover {
 
 .block--two .card__title {
   line-height: 22px;
+  padding-right: 5px;
 }
 
 .advertising__wrapper {
@@ -1056,7 +1058,7 @@ a:hover {
 }
 
 .slider-first__title-link {
-  bottom: 32%;
+  bottom: 20%;
   left: 50%;
   -webkit-transform: translate(-50%, 50%);
       -ms-transform: translate(-50%, 50%);
@@ -1066,7 +1068,17 @@ a:hover {
 }
 
 .slider-first__link-span {
-  padding-bottom: 60px;
+  position: absolute;
+  bottom: 230px;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+      -ms-transform: translate(-50%);
+          transform: translate(-50%);
+  font-size: 100px;
+}
+
+.slider-first__link-text {
+  padding-bottom: 20px;
 }
 
 .slider-first__photo {
@@ -1093,14 +1105,9 @@ a:hover {
 
 .slider-first__title-linkw {
   width: 350px;
-  padding-top: 100px;
   color: #000000;
   line-height: 28px;
   font-size: 24px;
-}
-
-.slider-first__title-linkb {
-  margin-bottom: 25px;
 }
 
 .slider-first__category-black {
@@ -1126,6 +1133,7 @@ a:hover {
 }
 
 .block--three .card__title-shot {
+  max-width: 424px;
   margin-bottom: 40px;
   font-size: 24px;
   line-height: 30px;
@@ -1386,6 +1394,10 @@ a:hover {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-top: 30px;
+}
+
+.footer__block {
+  display: block;
 }
 
 .footer__text-block1,
@@ -2188,5 +2200,13 @@ a:hover {
   .footer__text-block1,
   .footer__text-block2 {
     font-size: 12px;
+  }
+
+  .header__logo--modal {
+    left: 10%;
+  }
+
+  .modal__input {
+    padding-right: 0;
   }
 }
