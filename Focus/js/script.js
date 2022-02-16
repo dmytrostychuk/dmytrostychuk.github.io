@@ -1,13 +1,18 @@
 // Меню бургер
 const iconMenu = document.querySelector('.burger-bth');
 const menuBody = document.querySelector('.nav');
+
+
 if (iconMenu) {
 	iconMenu.addEventListener("click", function (e) {
 		document.body.classList.toggle('lock');
 		iconMenu.classList.toggle('active');
 		menuBody.classList.toggle('active');
+		
 	});
 }
+
+
 
 // Модальне вікно
 let isInit = false;
@@ -24,6 +29,8 @@ function openModal(){
         }
     );
   }
+
+
   elModal.classList.toggle('active');
 }
 
@@ -82,32 +89,38 @@ const swiper = new Swiper('.slider-first__swiper', {
 	  prevEl: '.swiper-button-prev',
 	},
 
+
+
 	// Відступ між слайдами
 	spaceBetween: 28,
 
 	//Кількість слайдів для показу
 	slidesPerView: 3,
 
-	autoplay: {
-		delay: 2000,
-		stopOnLastSlide: true,
-		disableOnInteraction: false
-	},
+		// autoplay: {
+		// 	delay: 2000,
+		// 	stopOnLastSlide: true,
+		// 	disableOnInteraction: false
+		// },
 
 	spead: 700,
 
 	breakpoints: {
 		320: {
 			slidesPerView: 1,
-
 			// Безкінечність
-			loop: true,
+			// loop: true,
+
+			scrollbar: {
+				el: '.slider-first__scrollbar',
+				draggable: true
+			},
+
 		},
 
 		768: {
 			slidesPerView: 1.3,
 			autoplay:false,
-
 		},
 
 		1200: {
@@ -138,18 +151,23 @@ const swiper = new Swiper('.slider-first__swiper', {
 	// Відступ між слайдами
 	spaceBetween: 25,
 
-	autoplay: {
-		delay: 1500,
-		stopOnLastSlide: true,
-		disableOnInteraction: false
-	},
+	// autoplay: {
+	// 	delay: 1500,
+	// 	stopOnLastSlide: true,
+	// 	disableOnInteraction: false
+	// },
 
 	breakpoints: {
 		320: {
 			slidesPerView: 1,
 
 			// Безкінечність
-			loop: true,
+			// loop: true,
+
+			scrollbar: {
+				el: '.slider-second__scrollbar',
+				draggable: true
+			},
 		},
 
 		768: {
@@ -183,18 +201,23 @@ const swiper = new Swiper('.slider-first__swiper', {
 	// Кількість слайдів для показу
 	slidesPerView: 1,
 
-	autoplay: {
-		delay: 1500,
-		stopOnLastSlide: true,
-		disableOnInteraction: false
-	},
+	// autoplay: {
+	// 	delay: 1500,
+	// 	stopOnLastSlide: true,
+	// 	disableOnInteraction: false
+	// },
 
 	breakpoints: {
 		320: {
 			slidesPerView: 1,
 
 			// Безкінечність
-			loop: true,
+			// loop: true,
+
+			scrollbar: {
+				el: '.slider-third__scrollbar',
+				draggable: true
+			},
 		},
 
 		768: {
@@ -224,7 +247,6 @@ const swiper = new Swiper('.slider-first__swiper', {
 
 	// spead: 700,
   });
-
 
 
 
