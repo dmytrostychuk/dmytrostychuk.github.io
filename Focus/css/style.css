@@ -2302,6 +2302,10 @@ a:hover {
     font-size: 14px;
   }
 
+  .block--one .card__title-shot {
+    padding-left: 15px;
+  }
+
   .block--two .card__title,
   .block--four .card__title,
   .block-five .card__title {
@@ -2481,10 +2485,10 @@ a:hover {
   }
 
   .slider-third .page__figcaption {
-    width: 200px;
+    width: 220px;
     margin-top: 0;
-    top: 30%;
-    left: 60%;
+    top: 20%;
+    left: 52%;
     -webkit-transform: translate(-50%);
         -ms-transform: translate(-50%);
             transform: translate(-50%);
@@ -2509,7 +2513,7 @@ a:hover {
   }
 
   .slider-third .page__explanation {
-    width: 180px;
+    width: 202px;
   }
 
   .slider-third__explanation {
@@ -2522,6 +2526,11 @@ a:hover {
     margin: 0 auto;
     margin-top: 20px;
     height: 10px;
+  }
+
+  .slider-third .swiper-button-next::after,
+  .slider-third .swiper-button-prev::after {
+    margin-top: 20px;
   }
 
   .card__figcaption-nophoto {
