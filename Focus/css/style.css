@@ -305,7 +305,7 @@ a:hover {
   left: -110%;
   -webkit-box-shadow: 0px -4px 5px -4px rgba(34, 60, 80, 0.6);
           box-shadow: 0px -4px 5px -4px rgba(34, 60, 80, 0.6);
-  overflow: auto;
+  overflow-x: hidden;
 }
 
 .nav.active {
@@ -2092,12 +2092,17 @@ a:hover {
     display: none;
   }
 
+  img {
+    max-width: 100%;
+  }
+
   .burger-bth {
     margin-right: 15px;
   }
 
   .container {
-    width: 303px;
+    max-width: 414px;
+    width: auto;
     padding: 0 15px;
   }
 
@@ -2178,6 +2183,10 @@ a:hover {
     width: 100%;
     font-weight: 400;
     padding-bottom: 30px;
+  }
+
+  .card img {
+    max-width: 100%;
   }
 
   .card__content {
@@ -2304,6 +2313,11 @@ a:hover {
 
   .block--one .card__title-shot {
     padding-left: 15px;
+  }
+
+  .block--one .card__times {
+    left: -40px;
+    right: 0;
   }
 
   .block--two .card__title,
@@ -2530,7 +2544,7 @@ a:hover {
 
   .slider-third .swiper-button-next::after,
   .slider-third .swiper-button-prev::after {
-    margin-top: 20px;
+    margin-top: 0px;
   }
 
   .card__figcaption-nophoto {
@@ -2584,7 +2598,8 @@ a:hover {
   }
 
   .footer__wrapper {
-    width: 273px;
+    max-width: 414px;
+    width: auto;
     padding: 0 15px;
   }
 
