@@ -1,22 +1,4 @@
-function testWebP(callback) {
-	var webP = new Image();
-	webP.onload = webP.onerror = function () {
-		callback(webP.height == 2);
-	};
-	webP.src = "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAACyAgCdASoCAAIALmk0mk0iIiIiIgBoSygABc6WWgAA/veff/0PP8bA//LwYAAA";
-}
-testWebP(function (support) {
-	if (support == true) {
-		document.querySelector('html').classList.add('_webp');
-	} else {
-		document.querySelector('html').classList.add('_no-webp');
-	}
-});
 
-// $('burger-bth').on('click', function(e){
-// 	e.preventDefault;
-// 	$(this).toggleClass('burger-bth__active')
-// });
 
 // Меню бургер
 const burgerBth = document.querySelector('.burger-bth');
@@ -39,6 +21,18 @@ $(document).ready(function(){
 	});
 	
   })
+
+	$(document).ready(function(){
+		$(".product__items--bootom").slice(0, 4).show();
+		$(".view__all--bottom").on("click", function(e){
+			e.preventDefault();
+			$(".product__items--bootom:hidden").slice(0, 4).slideDown();
+			if($(".product__items--bootom:hidden").length == 0) {
+			$(".view__all--bottom").text("No Content").addClass("no-сontent");
+			}
+		});
+		
+		})
 
 
 $(document).ready(function(){
@@ -79,7 +73,7 @@ function checkedAll (form) {
 				}
 				
 			},{
-				breakpoint: 1300,
+				breakpoint: 1366,
 				settings:{
 					arrows: false
 				},
@@ -89,10 +83,6 @@ function checkedAll (form) {
 		
 	});
 })
-
-	  
-
-
 
 $("#slider-range").slider({
 	range: true,
