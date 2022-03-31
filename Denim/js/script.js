@@ -1,5 +1,3 @@
-
-
 // Меню бургер
 const burgerBth = document.querySelector('.burger-bth');
 const menuNav = document.querySelector('.menu__container');
@@ -9,6 +7,15 @@ if (burgerBth) {
 		burgerBth.classList.toggle('bth-active');
 	});
 }
+
+
+const swiper = new Swiper(".swiper", {
+	// Навігаційні стрілки
+	navigation: {
+		nextEl: ".swiper-button-next",
+		prevEl: ".swiper-button-prev",
+	},
+});
 
 $(document).ready(function(){
 	$(".product__items").slice(0, 4).show();
