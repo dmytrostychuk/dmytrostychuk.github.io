@@ -1136,7 +1136,8 @@ a:active {
   position: relative;
   left: 50%;
   height: 66px;
-  margin-top: 30px;
+  margin-top: 20px;
+  margin-bottom: 30px;
   padding: 25px 50px;
   color: #ffffff;
   background-color: #151c22;
@@ -1204,7 +1205,15 @@ a:active {
 }
 
 .product {
-  margin-top: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-width: 0;
+  margin: 0 auto;
 }
 
 .product__wrapper {
@@ -1217,17 +1226,40 @@ a:active {
   margin: 0 6%;
 }
 
+.product__gallery {
+  position: relative;
+  width: 300px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.product .swiper-button-prev::after,
+.product .swiper-button-next::after {
+  font-weight: 600;
+  font-size: 20px;
+  color: #151C22;
+}
+
+.product .swiper-button-prev::after {
+  margin-left: -15px;
+}
+
+.product .swiper-button-next::after {
+  margin-right: -15px;
+}
+
 .description {
   background-color: #f1f2f4;
 }
 
 .description__container {
-  width: 320px;
+  max-width: 414px;
   margin: auto;
 }
 
 .description__inner {
-  margin: 0 4.8%;
+  margin: 0 15px;
 }
 
 .description__tittle {
@@ -1250,7 +1282,7 @@ a:active {
 }
 
 .description__form {
-  margin-top: 27px;
+  margin-top: 40px;
 }
 
 .description__form input {
@@ -1270,6 +1302,9 @@ a:active {
   height: 16px;
   position: absolute;
   border-radius: 50%;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .description__form .color1::before {
@@ -1285,49 +1320,18 @@ a:active {
 }
 
 .description__form input[type=radio]:checked + label:before {
-  width: 16px;
-  height: 16px;
   -webkit-transition: 0.5s all;
   -o-transition: 0.5s all;
   transition: 0.5s all;
+  width: 16px;
+  height: 16px;
   -webkit-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.7);
           box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.7);
 }
 
 .description__form label:hover:before {
-  -webkit-transition: 0.5s all;
-  -o-transition: 0.5s all;
-  transition: 0.5s all;
   -webkit-box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.7);
           box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.7);
-}
-
-.description__size {
-  margin-top: 33px;
-}
-
-.description__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 165px;
-  text-transform: uppercase;
-  font-size: 14px;
-  margin-bottom: 28px;
-}
-
-.description__list a {
-  color: #727a82;
-}
-
-.description__list a:hover {
-  -webkit-transition: 0.5s all;
-  -o-transition: 0.5s all;
-  transition: 0.5s all;
-  color: #151c22;
 }
 
 .description .button {
@@ -1337,6 +1341,36 @@ a:active {
   margin-bottom: 20px;
   margin-left: 0;
   font-size: 16px;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+label {
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  color: #727a82;
+}
+
+.description__list {
+  margin: 40px 0;
+}
+
+.description__list .description__size {
+  margin-right: 20px;
+}
+
+.description__list .description__input:checked + label {
+  color: #151C22;
+}
+
+.description__list input {
+  position: absolute;
+  width: 0;
+  height: 0;
+  z-index: -1;
 }
 
 .price {
@@ -1831,7 +1865,6 @@ a:active {
         -ms-flex-pack: end;
             justify-content: flex-end;
     width: 100%;
-    padding-right: 3%;
   }
 
   .form {
@@ -1934,15 +1967,17 @@ a:active {
   }
 
   .woman {
+    width: 720px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-auto-flow: row dense;
+    grid-column-gap: 50px;
   }
 
   .woman__card5 {
-    grid-column: span 2;
+    grid-column: span 2.5;
     grid-row: span 2;
-    width: 430px;
+    width: 464px;
   }
 
   .woman__card {
@@ -1955,6 +1990,7 @@ a:active {
     -webkit-transform: translate(-50%, 0);
         -ms-transform: translate(-50%, 0);
             transform: translate(-50%, 0);
+    margin-bottom: 50px;
   }
 
   .product {
@@ -2094,7 +2130,7 @@ a:active {
   }
 
   .header__inner {
-    max-width: 1366px;
+    max-width: 1330px;
     margin: 0 auto;
   }
 
@@ -2249,7 +2285,6 @@ a:active {
 
   .bestsellers__cart {
     width: auto;
-    margin-bottom: 0;
   }
 
   .bestsellers__cart p {
@@ -2370,12 +2405,14 @@ a:active {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-auto-flow: row dense;
+    width: 1300px;
+    grid-column-gap: 107px;
   }
 
   .woman__card5 {
     grid-column: span 2;
     grid-row: span 2;
-    width: 552px;
+    width: 600px;
   }
 
   .woman__card {
